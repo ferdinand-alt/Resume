@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: lato, sans-serif;
+}
+
+:root {
+    --primary-color1: #e67e22;
+    --primary-color2: #cf6d17;
+    --primary-color3: #232973;
+    --primary-color4: #020432;
+    --primary-color5: #f4f5f6;
+    --primary-color6: #0B0D25;
+}
+
+.profile-foto img {
+    width: auto;
+    height: 200px;
+    border-radius: 20px;
+}
+
+body {
+    background: #fff;
+}
+
+.link-contact {
+    text-decoration: none;
+    color: var(--primary-color5);
+    cursor: pointer;
+    transition: ease-in;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.tekst-link {
+    color: var(--primary-color1);
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary-color4);
+}
+
+.tekst-link:hover{
+    color: var(--primary-color4);
+}
+
+.link-contact:hover{
+    font-size: 20px;
+    color: var(--primary-color2);
+}
+
+.global-wrapper{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.resume {
+    display: flex;
+    background: var(--primary-color5);
+}
+
+.left {
+    background: var(--primary-color4);
+    width: 250px;
+    padding: 0 10px;
+}
+
+.right {
+    width: calc(100% - 250px);
+}
+
+.left .profile-foto{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pb {
+    padding-bottom: 50px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: var(--primary-color1);
+    position: relative;
+    text-align: right;
+}
+
+.title:before{
+    content: " ";
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color1);
+}
+
+.left .icon {
+    font-size: 20px;
+    color: var(--primary-color1);
+}
+
+.twee {
+    font-size: 20px;
+    color: var(--primary-color1);
+    transition: 0.2s;
+}
+
+.twee:hover {
+    font-size: 24px;
+    color: var(--primary-color2);
+}
+
+.left .text{
+    color: var(--primary-color1);
+    font-size: 13px;
+}
+
+.contact_wrapper .li_wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact_wrapper .li_wrapper .icon {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color5);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.contact .li_wrapper .text {
+    width: calc(100% - 50px);
+    word-break: break-word;
+    color: var(--primary-color5);
+}
+
+.li_wrapper .icon .link {
+    color: var(--primary-color1);
+}
+
+.skills ul, 
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .li_wrapper, 
+.hobbies .li_wrapper {
+    width: 90px;
+    height: 90px;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills .li_wrapper {
+    background: var(--primary-color5);
+}
+
+.skills .li_wrapper .fab{
+    font-size: 30px;
+}
+
+.skills .li_wrapper .text,
+.hobbies .li_wrapper .text {
+    margin-top: 7px;
+}
+
+.skills .li_wrapper .icon{
+    font-size: 20px;
+}
+
+.hobbies .li_wrapper {
+    border: 2px solid var(--primary-color5);
+}
+
+.hobbies .li_wrapper .icon,
+.hobbies .li_wrapper .text {
+    color: var(--primary-color1);
+}
+
+.header {
+    background: var(--primary-color4);
+    padding: 15px 15px 0px 5px;
+    color: var(--primary-color5);
+    height: 240px;
+}
+
+.header .name {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-color1);
+}
+
+.date-jan h5{
+    font-weight: 300;
+}
+
+.header .role {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--primary-color1);
+}
+
+.header .about {
+    margin-top: 0px;
+    line-height: 26px;
+}
+
+.right-inner {
+    padding: 30px;
+    color: var(--primary-color4);
+}
+
+.right-inner .education {
+    margin-top: 30px;
+}
+
+.right-inner .li_wrapper {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.right-inner .li_wrapper .date {
+    width: 125px;
+    color: var(--primary-color4);
+}
+
+.right-inner .li_wrapper img {
+    margin: 30px;
+    height: 60px;
+}
+
+.right-inner .li_wrapper .info {
+    width: calc(100% - 125px);
+    padding-left: 25px;
+    position: relative;
+}
+
+.right-inner .li_wrapper .info-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary-color1);
+}
+
+.right-inner .li_wrapper .info-com {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 3px;
+    color:var(--primary-color1);
+}
+
+.right-inner .li_wrapper .info-cont {
+    margin-top: 15px;
+}
+
+.right-inner .li_wrapper .info:before{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color1);
+    border-radius: 50%;
+}
+
+.right-inner .li_wrapper .info:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 2px;
+    height: 90%;
+    background: var(--primary-color1);
+}
+
+@media(max-width: 991px) {
+    .profile-foto img, .showcase header {
+        width: auto;
+        height: 150px;
+        border-radius: 20px
+    }
+    .left {
+        background: var(--primary-color4);
+        width: 220px;
+        padding: 0 10px;
+    }
+    .right {
+        width: calc(100% - 220px);
+    }
+    .title {
+        font-size: 20px;
+        padding-bottom: 8px;
+    }
+    .left .icon {
+        font-size: 18px;
+    }
+    .skills .li_wrapper, 
+    .hobbies .li_wrapper {
+    width: 60px;
+    height: 60px;
+    }
+    .li_wrapper .text{
+        font-size: 12px;
+    }
+    .header {
+        height: 200px;
+    }
+    .header .name {
+        font-size: 27px;
+    }
+    .header .role {
+        font-size: 20px;
+    }
+    .header .about {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .right-inner {
+        padding: 20px;
+    }
+}
+
+@media(max-width: 500px){
+    .profile-foto img, .showcase header {
+        width: auto;
+        height: 100px;
+        border-radius: 20px
+    }
+    .left {
+        background: var(--primary-color4);
+        width: 150px;
+        padding: 0 10px;
+    }
+    .right {
+        width: calc(100% - 150px);
+    }
+    .right-inner .li_wrapper {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .right-inner .li_wrapper img {
+        display: none;
+    }
+    .right-inner {
+        padding: 5px;
+    }
+    .header .name {
+        font-size: 15px;
+    }
+    .header .role {
+        font-size: 16px;
+    }
+    .header .about {
+        font-size: 12px;
+    }
+    .right-inner .li_wrapper .info:before, 
+    .right-inner .li_wrapper .info:after, .title:before{
+        display: none;
+    }
+    .title {
+        font-size: 14px;
+        display: block;
+    }
+    body{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
